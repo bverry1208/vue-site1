@@ -1,5 +1,5 @@
 <template>
-        <section id="imgTextType" v-bind:class=skill>
+        <section id="imgTextType" v-bind:class="skill">
     <h2 class="ir_so">이미지 텍스트 영역</h2>
     <div class="imgText__inner container">
       <div class="txt">
@@ -29,6 +29,14 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+    props: {
+        skill: String
+    },
+};
+</script>
 
 <style scoped>
 .imgText__inner {

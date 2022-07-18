@@ -1,5 +1,5 @@
 <template>
-        <header id="headerType" class="">
+        <header id="headerType" v-bind:class="[font, color]">
             <div class="header__inner">
                 <h1 class="header__logo">
                     <a href="/">
@@ -32,6 +32,15 @@
         </div>
     </header>   
 </template>
+
+<script>
+export default {
+    props: {
+        font: String,
+        color: String,
+    },
+};
+</script>
 
 <style scoped>
 .header__inner {

@@ -1,5 +1,5 @@
 <template>
-        <section id="imageType" v-bind:class=skill>
+        <section id="imageType" v-bind:class="skill">
     <h2>포트폴리오가 실력이다.</h2>
     <p>
       이미지 유형입니다. 마우스 오버시 자세한 정보가 나와는 구조입니다.
